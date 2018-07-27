@@ -31,8 +31,11 @@ class RoomTest < MiniTest::Test
     assert_equal(3, @room1.count_guests())
   end
 
-  # def test_add_songs()
-  #   song = ("Girls Just Wanna Have Fun")
-  #   assert_equal("Girls Just Wanna Have Fun", @room1.add_song(song))
-# end
+  def test_add_songs()
+    song1 = ("Girls Just Wanna Have Fun")
+    song2 = ("When Doves Cry")
+    @room1.add_song(song1)
+    @room1.add_song(song2)
+    assert_equal(4, @room1.count_songs())
+  end
 end
