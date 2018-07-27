@@ -20,6 +20,10 @@ class Room
     @guests.push(guest)
   end
 
+  def checkout_guest(guest)
+    @guests.delete(guest)
+  end
+
   def add_song(song)
     @songs.push(song)
   end
