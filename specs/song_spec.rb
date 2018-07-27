@@ -9,7 +9,7 @@ class SongTest < MiniTest::Test
     @song1 = Song.new("Take On Me")
   end
 
-  def test_has_name
+  def test_has_name()
   assert_equal("Take On Me", @song1.name())
   end
 
